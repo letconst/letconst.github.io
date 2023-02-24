@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header {
+    background-position: center;
+    background-image: url("/images/header-background.png");
+    background-color: rgba($color: #181818, $alpha: .4);
+    background-size: auto 220%;
+    background-blend-mode: darken;
+
+    a {
+        color: #fff;
+    }
+}

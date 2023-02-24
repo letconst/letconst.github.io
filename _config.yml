@@ -4,7 +4,7 @@ email: letconst93@gmail.com
 github_username: letconst
 
 # Build settings
-theme: cayman
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
