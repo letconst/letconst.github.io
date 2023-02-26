@@ -1,0 +1,10 @@
+<span class="nowrap">
+    <span class="emoji" {% comment %}
+        {% endcomment %}style="width: {{ include.i_size | default: '22px' }}; {% comment %}
+        {% endcomment %}height: {{ include.i_size | default: '22px' }}; {% comment %}
+        {% endcomment %}background-image: url('/assets/images/emoji/{{ include.name }}.png')"
+    ></span>
+    {%- if include.text -%}
+    <span class="emoji-text">{{ include.text }}</span>
+    {%- endif -%}
+</span>
