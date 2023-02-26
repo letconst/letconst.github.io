@@ -1,0 +1,24 @@
+<div class="source-code-links">
+    {% if include.link1 %}
+        {% capture link1 -%}
+            <a href='{{ include.link1 }}'>ソースコード
+                {%- if include.link2 %}1{% endif -%}
+            </a>
+        {%- endcapture %}
+        {% include emoji.html name="github" text=link1 %}
+    {% endif %}
+    {% if include.link2 %}
+        {% capture link2 -%}
+            <a href='{{ include.link2 }}'>ソースコード2
+            </a>
+        {%- endcapture %}
+        {% include emoji.html name="github" text=link2 %}
+    {% endif %}
+    {% if include.link3 %}
+        {% capture link3 -%}
+            <a href='{{ include.link3 }}'>ソースコード3
+            </a>
+        {%- endcapture %}
+        {% include emoji.html name="github" text=link3 %}
+    {% endif %}
+</div>

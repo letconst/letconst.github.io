@@ -201,6 +201,15 @@ $table-head-bg-color: #eaecf0;
     .toc-title {
         font-weight: bold;
     }
+
+    .source-code-links {
+        // ソースコードリンクの絵文字にはボタンっぽく背景をつける
+        .emoji-wrapper {
+            border-radius: 5px;
+            padding: 6px;
+            background-color: #e6e6e6;
+        }
+    }
 }
 
 .nowrap {

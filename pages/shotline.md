@@ -47,6 +47,8 @@
 
 {% include image.html image="games/shotline/shotline_work_line.png" caption="オレンジ色の線がLineRendererでの射線" %}
 
+{% include source_code_link.html link1="https://github.com/letconst/shotline/blob/main/Assets/Users/Endo/Scripts/ShotLine/ShotLineDrawer.cs" %}
+
 本ゲームのコンセプトである、自由に描ける射線の実装を行いました。画面中央のプレイヤーから指でスワイプすることで線が描画されます。UnityのLineRendererを用いて実現しました。描いた射線は射撃を行うまで画面上に固定されるという仕様のため、ワールド座標に配置されるLineRendererをプレイヤーの移動に合わせて動かす点で苦労しました。
 
 {% include clear.html %}
@@ -55,6 +57,8 @@
 
 {% include image.html image="games/shotline/shotline_work_message_window.png" caption="実際にゲーム内で表示されるメッセージウィンドウ" %}
 
+{% include source_code_link.html link1="https://github.com/letconst/shotline/blob/main/Assets/Users/Endo/Scripts/UI/SystemUIManager.cs" %}
+
 選択項目の確認やエラーの際に表示されるメッセージウィンドウの実装を行いました。実装にあたり、メッセージ内容や閉じたときの処理は表示時にUIオブジェクトへ反映させるだけで良いと思ったため、表示をつかさどるマネージャークラス自体には`MonoBehaviour`を継承せず、`static`クラスとして実装しました。表示する際は、マネージャークラスのメソッドにパラメータを渡して呼ぶだけで可能にしています。
 
 {% include clear.html %}
@@ -62,6 +66,8 @@
 ### オーバーヘッド削減
 
 {% include image.html image="games/shotline/shotline_work_overhead.png" %}
+
+{% include source_code_link.html link1="https://github.com/letconst/shotline/blob/main/Assets/Users/Endo/Scripts/Utils/ManagedEventCaller.cs" %}
 
 Unityの`Start()`や`Update()`といったイベントメソッドは、記述するだけでオーバーヘッドが発生することが知られています。今回はパフォーマンスへの意識が求められる3Dのモバイルゲームということもあり、その一環として削減に取り組んでみました。`MonoBehaviour`スクリプトに指定のInterfaceを実装し、その参照を所定のインスペクターに渡す簡易的なものですが、実行する順番を制御できるなどのメリットも生まれました。
 
@@ -130,6 +136,8 @@ JSONスキーマの定義までは至りませんでしたが、処理を容易�
 
 {% include image.html image="games/shotline/shotline_work_room_matching.png" caption="ゲーム内のルーム選択画面" %}
 
+{% include source_code_link.html link1="https://github.com/letconst/shotline-server/blob/main/modules/Room.js" %}
+
 複数組でのプレイを実現するため、マッチングをルームの選択式にしました。サーバー上ではルームごとにインスタンスが存在し、ゲーム上でのアイテム生成や、ラウンド進行をつかさどるなどの管理を担っています。
 
 ルーム選択画面には、サーバー上の全ルームが表示されます。ルームは最低2つが常に存在し、必要に応じてプレイヤーが増やすことができます。対戦が終わると自動的に削除されますが、何らかの理由で削除が行われなかった場合の対策として、一定時間通信がないルームは自動的に破棄されるよう施しています。
@@ -173,6 +181,8 @@ JSONスキーマの定義までは至りませんでしたが、処理を容易�
 
 {% include image.html image="games/shotline/shotline_work_bot_command.png" caption="サーバー内で利用できるコマンドと実行ログ" %}
 
+{% include source_code_link.html link1="https://github.com/letconst/shotline-discord-bot/tree/main/modules/discord/interactions" %}
+
 制作を進める中で、ゲームサーバーの制御やiOS端末へのビルド実行の作業を1箇所で操作したいと思い、チームで利用していたDiscordサーバーにコマンドを用意しました。
 
 自分だけでなくサーバーに参加しているメンバー全員が実行できるため、展示当日に私が対応できないタイミングでゲームサーバーの再起動が必要になった際、お客様を待たせることなく案内することができました。
@@ -183,6 +193,8 @@ JSONスキーマの定義までは至りませんでしたが、処理を容易�
 
 {% include image.html image="games/shotline/shotline_work_bot_notify.png" %}
 {% include image.html image="games/shotline/shotline_work_bot_activity.png" %}
+
+{% include source_code_link.html link1="https://github.com/letconst/shotline-discord-bot/blob/main/modules/common/routes/onNotify.js" link2="https://github.com/letconst/shotline-discord-bot/blob/main/modules/common/routes/onSetActivity.js" %}
 
 自動化だけでなく、時間のかかるクラウドビルドからデプロイサービスへのアップロード完了通知も実装することで、実機確認までの時間の最適化を図りました。
 
