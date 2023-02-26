@@ -1,0 +1,18 @@
+{% case include.float %}
+    {% when "left" %}
+        {% assign float = "tleft" %}
+    {% when "right" %}
+        {% assign float = "tright" %}
+    {% else %}
+        {% assign float = "tright" %}
+{% endcase %}
+
+{% assign width = include.width | default: '300px' %}
+<figure class="thumb {{ float }}" style="--width: {{ width }};">
+    <img src="/assets/images/{{ include.image }}" style="--width: {{ width }};">
+    {%- if include.caption -%}
+        <figcaption>
+            <span>{{ include.caption }}</span>
+        </figcaption>
+    {% endif %}
+</figure>

@@ -53,6 +53,59 @@
     }
 
 }
+.tleft {
+    @include large {
+        float: left;
+        clear: left;
+        margin: 0 1em 1em 0;
+    }
+}
+
+.tright {
+    @include large {
+        float: right;
+        clear: right;
+        margin: 0 0 1em 1em;
+    }
+}
+
+.thumb {
+    display: block;
+
+    img {
+        @include large {
+            width: var(--width);
+        }
+
+        @include small {
+            width: 100%;
+        }
+
+        @include small {
+            width: 100%;
+        }
+    }
+
+    figcaption {
+        padding: 0 3px 3px;
+        font-size: 12px;
+    }
+
+    @include large {
+        width: var(--width);
+    }
+
+    @include medium {
+        margin: 0 0 1em 0;
+        width: 100%;
+    }
+
+    @include small {
+        margin: 0 0 1em 0;
+        width: 100%;
+    }
+}
+
 .emoji {
     display: inline-block;
     height: auto;
