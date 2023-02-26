@@ -191,13 +191,15 @@
     }
 }
 
-.emoji {
-    display: inline-block;
-    height: auto;
-    vertical-align: text-bottom;
-    background-size: cover;
-}
+.emoji-wrapper {
+    .emoji {
+        display: inline-block;
+        height: auto;
+        vertical-align: text-bottom;
+        background-size: cover;
+    }
 
-.emoji-text {
-    padding-left: .3em;
+    .emoji-text {
+        padding-left: .3em;
+    }
 }
