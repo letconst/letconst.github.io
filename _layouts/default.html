@@ -27,6 +27,13 @@
     </header>
 
     <main id="content" class="main-content" role="main">
+        <section>
+            <header>
+                <span class="toc-title">目次</span>
+            </header>
+
+            {% include toc.html html=content %}
+        </section>
       {{ content }}
 
       <footer class="site-footer">
