@@ -1,0 +1,54 @@
+{% assign links = include.links | split: "," %}
+
+<div class="infobox">
+    <div class="infobox-header">{{ include.header }}</div>
+    {% if include.image %}
+        <div class="infobox-image-area">
+            <img src="/assets/images/{{ include.image }}">
+        </div>
+    {% endif %}
+    <table class="infobox-table">
+        <tbody>
+            <tr>
+                <th>制作区分</th>
+                <td>{{ include.scale }}</td>
+            </tr>
+            {% if include.members %}
+                <tr>
+                    <th>制作人数</th>
+                    <td>{{ include.members }}</td>
+                </tr>
+            {% endif %}
+            <tr>
+                <th>開発環境</th>
+                <td>{{ include.dev_env }}</td>
+            </tr>
+            {% if include.platform %}
+                <tr>
+                    <th>プラットフォーム</th>
+                    <td>{{ include.platform }}</td>
+                </tr>
+            {% endif %}
+            <tr>
+                <th>開発期間</th>
+                <td>{{ include.dev_period }}</td>
+            </tr>
+            {% if include.award %}
+                <tr>
+                    <th>受賞歴</th>
+                    <td>{{ include.award }}</td>
+                </tr>
+            {% endif %}
+            <tr>
+                <th>リンク</th>
+                <td>
+                    <ul>
+                        {% for link in links %}
+                            <li>{{ link }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

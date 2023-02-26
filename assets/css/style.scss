@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+$border-color: #bbc2c6;
+$table-bg-color: #f8f9fa;
+$table-head-bg-color: #eaecf0;
+
 .page-header {
     background-position: center;
     background-image: url("/assets/images/header-background.png");
@@ -106,6 +110,67 @@
         }
     }
 
+    .infobox {
+        box-sizing: content-box;
+        border: solid 1px $border-color;
+        background-color: $table-bg-color;
+        padding: 2px;
+        font-size: 90%;
+
+        .infobox-header {
+            background-color: $table-head-bg-color;
+            padding: 5px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 110%;
+        }
+
+        .infobox-image-area {
+            padding: 4px;
+            text-align: center;
+        }
+
+        .infobox-table {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 1px;
+            word-break: break-word;
+
+            tbody {
+                tr {
+                    &:nth-child(2n) {
+                        background-color: #f0f1f2;
+                    }
+
+                    th {
+                        border: none;
+                        background-color: inherit;
+                        padding: 4px;
+                        text-align: left;
+                        white-space: nowrap;
+                    }
+
+                    td {
+                        border: none;
+                        padding: 4px;
+
+                        ul {
+                            margin: 6px 0;
+                            padding-left: 1.45em;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include large {
+            float: right;
+            clear: right;
+            width: 300px;
+            margin: 0 0 .5em 1em;
+            overflow: auto;
+        }
+    }
 
     .embed-container {
         @include small {
