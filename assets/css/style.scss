@@ -29,4 +29,27 @@
         color: midnightblue;
         font-weight: bold;
     }
+
+    table {
+        border-collapse: collapse;
+        border-color: #bbc2c6;
+        border-radius: 2px;
+
+        tbody {
+            background-color: #f8f9fa;
+        }
+
+        tr {
+            th {
+                background-color: #eaecf0;
+                border-color: #bbc2c6;
+            }
+
+            td {
+                border-color: #bbc2c6;
+                word-break: normal;
+            }
+        }
+    }
+
 }

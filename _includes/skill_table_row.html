@@ -1,0 +1,14 @@
+<tr>
+    {% if include.th %}
+        <th rowspan="{{ include.th_rowspan | 1 }}">{{ include.th }}</th>
+    {% endif %}
+    {% if include.td1 %}
+        <td>{{ include.td1 }}</td>
+    {% endif %}
+    {% if include.td2 %}
+        <td>{{ include.td2 }}</td>
+    {% endif %}
+    {% if include.td3 %}
+        <td>{{ include.td3 }}</td>
+    {% endif %}
+</tr>
