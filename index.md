@@ -19,8 +19,7 @@
 
 {% include emoji.html name="github" text="[GitHub](https://github.com/letconst)" %}
 
-学校では、Unityを用いたゲームプログラミングを学び、主にチームでのゲーム制作を行っています。バックエンド側の技術にも興味があり、リアルタイムシューティングのマルチプレイヤーゲーム制作にも挑戦しました。
-最近、ラーメン屋への訪店が連続100週を超えました。
+学校では、Unityを用いたゲームプログラミングを学び、主にチームでのゲーム制作を行っています。バックエンド側の技術にも興味があり、リアルタイムシューティングのマルチプレイヤーゲーム制作にも挑戦しました。最近、ラーメン屋への訪店が連続100週を超えました。
 
 ## Works
 
@@ -30,22 +29,22 @@
     <dt>2年</dt>
     <dd>
         <ul>
-            <li><a href="">寝言COOKING</a></li>
-            <li><a href="">AIの歌</a></li>
+            <li><a href="/pages/negoto-cooking">寝言COOKING</a></li>
+            <li><a href="/pages/song-for-ai">AIの歌</a></li>
         </ul>
     </dd>
     <dt>3年</dt>
     <dd>
         <ul>
-            <li><a href="">SHOTLINE</a></li>
-            <li><a href="">ギミックフィールド</a></li>
+            <li><a href="/pages/shotline">ショットライン</a></li>
+            <li><a href="/pages/gimmick-field">ギミックフィールド</a></li>
         </ul>
     </dd>
     <dt>4年</dt>
     <dd>
         <ul>
-            <li><a href="">天上宮殿の騎士</a></li>
-            <li><a href="">ビケイム・ア・ロケット</a></li>
+            <li><a href="/pages/knight-of-heavenly-palace">天上宮殿の騎士</a></li>
+            <li><a href="/pages/became-a-rocket">ビケイム・ア・ロケット</a></li>
         </ul>
     </dd>
 </dl>
@@ -112,7 +111,7 @@
 {% include image.html image="profile/hobby_cycling.jpg" caption="横須賀基地に訪れた際の写真" %}
 
 ロードバイクに乗って遠征することが好きです。<br>
-平塚の自宅から、横須賀基地や相模湖、小田原城などに訪れました。通学時は、駅までの往復約14kmをマウンテンバイクで走っています。
+平塚の自宅から、横須賀基地や相模湖、小田原城などに訪れました。通学時は、駅までの往復約14kmをマウンテンバイクで通っています。
 
 {% include clear.html %}
 
