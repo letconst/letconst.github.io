@@ -5,7 +5,7 @@
 
 .page-header {
     background-position: center;
-    background-image: url("/images/header-background.png");
+    background-image: url("/assets/images/header-background.png");
     background-color: rgba($color: #181818, $alpha: .4);
     background-size: auto 220%;
     background-blend-mode: darken;
@@ -52,7 +52,67 @@
         }
     }
 
+    .supper {
+        font-size: 80%;
+        vertical-align: super;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .profile {
+        display: grid;
+        justify-content: start;
+        column-gap: 1em;
+
+        img {
+            border-radius: 7px;
+            grid-row: 1 / 3;
+        }
+
+        .profile-name {
+            font-size: 1.5em;
+            grid-column: 2;
+        }
+
+        dl {
+            grid-column: 2;
+        }
+
+        dd {
+            margin-left: 1.5em;
+        }
+    }
+
+    .works {
+        display: grid;
+        justify-content: start;
+        align-items: baseline;
+        column-gap: 2em;
+
+        dt {
+            grid-column: 1;
+        }
+
+        dd {
+            grid-column: 2;
+            margin: 0;
+
+            ul {
+                margin: 0;
+                padding-left: 1.2em;
+            }
+        }
+    }
 }
+
+.nowrap {
+    display: inline-block;
+    width: max-content;
+    white-space: nowrap;
+}
+
 .tleft {
     @include large {
         float: left;

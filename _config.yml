@@ -6,7 +6,7 @@ github_username: letconst
 # Build settings
 theme: jekyll-theme-cayman
 plugins:
-  - jekyll-feed
+  - jekyll-youtube
 
 timezone: Asia/Tokyo
 
