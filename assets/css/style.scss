@@ -22,6 +22,7 @@ $table-head-bg-color: #eaecf0;
 .main-content {
     h2 {
         border-bottom: 1px solid #c0c0c0;
+        overflow: hidden;
     }
 
     h1,
@@ -30,27 +31,32 @@ $table-head-bg-color: #eaecf0;
     h4,
     h5,
     h6 {
+        margin: 1em 0 .5em;
         color: midnightblue;
         font-weight: bold;
     }
 
+    p {
+        margin: .75em 0;
+    }
+
     table {
         border-collapse: collapse;
-        border-color: #bbc2c6;
+        border-color: $border-color;
         border-radius: 2px;
 
         tbody {
-            background-color: #f8f9fa;
+            background-color: $table-bg-color;
         }
 
         tr {
             th {
-                background-color: #eaecf0;
-                border-color: #bbc2c6;
+                background-color: $table-head-bg-color;
+                border-color: $border-color;
             }
 
             td {
-                border-color: #bbc2c6;
+                border-color: $border-color;
                 word-break: normal;
             }
         }
@@ -239,6 +245,11 @@ $table-head-bg-color: #eaecf0;
     figcaption {
         padding: 0 3px 3px;
         font-size: 12px;
+    }
+
+    // 連続する場合、最後以外は下余白を狭める
+    &:not(:last-child) {
+        margin-bottom: .5em;
     }
 
     @include large {
