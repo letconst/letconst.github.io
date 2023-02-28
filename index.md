@@ -79,7 +79,7 @@
     {% include skill_table_row.html
        td1=php td2="2年" td3="授業にて利用。ウェブアプリケーションなどを作成。" %}
     {% include skill_table_row.html
-       td1=python td2="2年" td3="ツール作成や授業にて利用。ウェブスクレイピングなどで利用。" %}
+       td1=python td2="2年" td3="ツール作成や授業にて利用。ウェブスクレイピングツールなどを作成。" %}
     {% include skill_table_row.html
        td1=cpp td2="1年" td3="授業にて利用。コンソールアプリケーションなどを作成。" %}
     {% include skill_table_row.html
