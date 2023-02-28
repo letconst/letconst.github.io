@@ -43,7 +43,9 @@
 
 {% include image.html image="games/kohp/kohp_work_event.png" width="350px" caption="実際に記述したイベント型の定義と利用箇所" %}
 
-{% include source_code_link.html link1="https://github.com/letconst/knight-of-heavenly-palace-public/blob/main/Assets/Users/Endo/Scripts/EventSystem/EventMessage.cs" %}
+{% include source_code_link.html
+    link1="https://github.com/letconst/knight-of-heavenly-palace-public/blob/main/Assets/Users/Endo/Scripts/EventSystem/EventMessage.cs"
+%}
 
 本制作では、イベントの通知にUniRxのMessageBrokerを使用しました。スクリプト間の主なやり取り手段として採用したため、さらに効率的にPublishできるような形にしました。
 
@@ -56,7 +58,9 @@
 {% include image.html image="games/kohp/kohp_work_master_data_1.png" width="350px" %}
 {% include image.html image="games/kohp/kohp_work_master_data_2.png" width="350px" caption="実際のエディター画面（上: 魔物、下: プレイヤー）" %}
 
-{% include source_code_link.html link1="https://github.com/letconst/knight-of-heavenly-palace-public/tree/main/Assets/Users/Endo/Scripts/MasterData" %}
+{% include source_code_link.html
+    link1="https://github.com/letconst/knight-of-heavenly-palace-public/tree/main/Assets/Users/Endo/Scripts/MasterData"
+%}
 
 マスターデータを`ScriptableObject`で管理する機構、およびそれを編集するエディターウィンドウを作成しました。データの呼び出しはAddressablesを用いた非同期処理として行っています。またエディターでは、扱いの容易さ、そして効率性を重視し、1画面でデータの編集が完結するよう実現しました。
 
@@ -68,9 +72,9 @@
 
 準備中
 
-## プレイ画像
+## ギャラリー
 
 {% include gallary_header.html %}
-    {% include image.html image="games/kohp/kohp_play_lobby.png" width="350px" caption="依頼を受領するロビー" %}
-    {% include image.html image="games/kohp/kohp_play_dragon.png" width="350px" caption="火を吹くドラゴンに立ち向かう様子" %}
+    {% include image.html image="games/kohp/kohp_play_lobby.png" caption="依頼を受領するロビー" %}
+    {% include image.html image="games/kohp/kohp_play_dragon.png" caption="火を吹くドラゴンに立ち向かう様子" %}
 {% include gallary_footer.html %}

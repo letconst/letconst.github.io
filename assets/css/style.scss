@@ -284,6 +284,7 @@ $gallary_gap: .5em;
     display: flex;
     flex-wrap: wrap;
     gap: $gallary_gap;
+    align-items: baseline;
     margin: .5em 0 1em 0;
     padding: 3px;
 
