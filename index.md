@@ -17,7 +17,7 @@
     </dl>
 </div>
 
-{% include emoji.html name="github" text="[GitHub](https://github.com/letconst)" %}
+{% include emoji.html name="github" text="[@letconst](https://github.com/letconst)" %}
 
 学校では、Unityを用いたゲームプログラミングを学び、主にチームでのゲーム制作を行っています。バックエンド側の技術にも興味があり、リアルタイムシューティングのマルチプレイヤーゲーム制作にも挑戦しました。最近、ラーメン屋への訪店が連続100週を超えました。
 
@@ -79,7 +79,7 @@
     {% include skill_table_row.html
        td1=php td2="2年" td3="授業にて利用。ウェブアプリケーションなどを作成。" %}
     {% include skill_table_row.html
-       td1=python td2="2年" td3="ツール作成や授業にて利用。" %}
+       td1=python td2="2年" td3="ツール作成や授業にて利用。ウェブスクレイピングなどで利用。" %}
     {% include skill_table_row.html
        td1=cpp td2="1年" td3="授業にて利用。コンソールアプリケーションなどを作成。" %}
     {% include skill_table_row.html
