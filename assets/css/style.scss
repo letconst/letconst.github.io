@@ -3,9 +3,9 @@
 
 @import "{{ site.theme }}";
 
-$border-color: #bbc2c6;
-$table-bg-color: #f8f9fa;
-$table-head-bg-color: #eaecf0;
+$border_color: #bbc2c6;
+$table_bg_color: #f8f9fa;
+$table_head_bg_color: #eaecf0;
 
 .page-header {
     background-position: center;
@@ -42,21 +42,21 @@ $table-head-bg-color: #eaecf0;
 
     table {
         border-collapse: collapse;
-        border-color: $border-color;
+        border-color: $border_color;
         border-radius: 2px;
 
         tbody {
-            background-color: $table-bg-color;
+            background-color: $table_bg_color;
         }
 
         tr {
             th {
-                background-color: $table-head-bg-color;
-                border-color: $border-color;
+                background-color: $table_head_bg_color;
+                border-color: $border_color;
             }
 
             td {
-                border-color: $border-color;
+                border-color: $border_color;
                 word-break: normal;
             }
         }
@@ -118,13 +118,13 @@ $table-head-bg-color: #eaecf0;
 
     .infobox {
         box-sizing: content-box;
-        border: solid 1px $border-color;
-        background-color: $table-bg-color;
+        border: solid 1px $border_color;
+        background-color: $table_bg_color;
         padding: 2px;
         font-size: 90%;
 
         .infobox-header {
-            background-color: $table-head-bg-color;
+            background-color: $table_head_bg_color;
             padding: 5px;
             font-weight: bold;
             text-align: center;
@@ -172,7 +172,7 @@ $table-head-bg-color: #eaecf0;
         @include large {
             float: right;
             clear: right;
-            width: 300px;
+            width: 310px;
             margin: 0 0 .5em 1em;
             overflow: auto;
         }
@@ -234,6 +234,7 @@ $table-head-bg-color: #eaecf0;
     }
 }
 
+// 画像表示
 .thumb {
     display: block;
 
@@ -273,6 +274,36 @@ $table-head-bg-color: #eaecf0;
     @include small {
         margin: 0 0 1em 0;
         width: 100%;
+    }
+}
+
+$gallary_gap: .5em;
+
+// 画像のギャラリー表示
+.gallary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gallary_gap;
+    margin: .5em 0 1em 0;
+    padding: 3px;
+
+    figure.thumb {
+        display: inline-block;
+        float: none;
+        clear: none;
+        margin: 0;
+
+        @include large {
+            width: calc(25% - #{$gallary_gap});
+        }
+
+        @include medium {
+            width: calc((100% / 3) - #{$gallary_gap});
+        }
+
+        @include small {
+            width: calc(50% - #{$gallary_gap});
+        }
     }
 }
 
