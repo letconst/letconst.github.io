@@ -1,7 +1,7 @@
 # 天上宮殿の騎士
 
 {% capture links_raw -%}
-    {% include emoji.html name="github" text="<a href='https://github.com/letconst/knight-of-heavenly-palace'>リポジトリ</a>" %}
+    {% include emoji.html name="github" text="<a href='https://github.com/letconst/knight-of-heavenly-palace-public'>リポジトリ</a>" %}
 {% endcapture %}
 {% capture dev_env %}
     {% include emoji.html name="unity" text="Unity 2021.2.15f1" %}<br>
