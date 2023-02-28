@@ -4,7 +4,7 @@
     <div class="infobox-header">{{ include.header }}</div>
     {% if include.image %}
         <div class="infobox-image-area">
-            <img src="/assets/images/{{ include.image }}">
+            <img src="/assets/images/{{ include.image }}" width="{{ include.image_width }}">
         </div>
     {% endif %}
     <table class="infobox-table">
