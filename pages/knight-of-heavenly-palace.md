@@ -68,10 +68,6 @@
 
 {% include clear.html %}
 
-## プレイ動画
-
-準備中
-
 ## ギャラリー
 
 {% include gallary_header.html %}
