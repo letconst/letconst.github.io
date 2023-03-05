@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    command: jekyll serve --force_polling
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - 4000:4000

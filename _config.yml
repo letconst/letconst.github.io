@@ -9,6 +9,8 @@ theme: jekyll-theme-cayman
 
 timezone: Asia/Tokyo
 
+repository: letconst/letconst.github.io
+
 google_analytics: G-3SG30132CW
 
 # Exclude from processing.
