@@ -79,6 +79,12 @@ Unityの`Start()`や`Update()`といったイベントメソッドは、記述�
 
 {% include youtube.html url="https://www.youtube.com/embed/74gPiQ0GQ4E?start=4671" %}
 
+## ギャラリー
+
+{% include gallary_header.html %}
+    {% include image.html image="games/shotline/shotline_gallary_award.jpg" caption="ゲームクリエイター甲子園2021にていただいた賞状" %}
+{% include gallary_footer.html %}
+
 ---
 
 # ゲームサーバー

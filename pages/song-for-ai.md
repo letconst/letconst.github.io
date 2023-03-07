@@ -73,4 +73,5 @@ AIの歌は、「音を紡いで世界を取り戻す」をキャッチコピー
 {% include gallary_header.html %}
     {% include image.html image="games/sfai/sfai_gallary_music_selection.png" caption="楽曲選択画面" %}
     {% include image.html image="games/sfai/sfai_gallary_scenario.png" caption="シナリオパート" %}
+    {% include image.html image="games/sfai/sfai_gallary_award.jpg" caption="卒業・進級制作展にていただいた賞状" %}
 {% include gallary_footer.html %}
