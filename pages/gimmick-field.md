@@ -1,4 +1,6 @@
-# ギミックフィールド
+---
+title: ギミックフィールド
+---
 
 {% capture links_raw -%}
     {% include emoji.html name="github" text="<a href='https://github.com/letconst/gimmick-field-public'>リポジトリ</a>" %}

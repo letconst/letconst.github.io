@@ -1,4 +1,6 @@
-# AIの歌
+---
+title: AIの歌
+---
 
 {% capture links_raw -%}
     {% include emoji.html name="github" text="<a href='https://github.com/KURO-Games/songForAI'>リポジトリ</a>" %}

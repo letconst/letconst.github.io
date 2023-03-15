@@ -1,4 +1,6 @@
-# 寝言COOKING
+---
+title: 寝言COOKING
+---
 
 {% capture links_raw -%}
     {% include emoji.html name="github" text="<a href='https://github.com/letconst/NegotoCooking'>リポジトリ</a>" %},

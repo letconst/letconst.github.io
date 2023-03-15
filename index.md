@@ -1,4 +1,6 @@
-# Profile
+---
+title: Profile
+---
 
 <div class="profile">
     <img src="/assets/images/profile/me.jpg" width="200px">

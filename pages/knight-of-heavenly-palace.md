@@ -1,4 +1,6 @@
-# 天上宮殿の騎士
+---
+title: 天上宮殿の騎士
+---
 
 {% capture links_raw -%}
     {% include emoji.html name="github" text="<a href='https://github.com/letconst/knight-of-heavenly-palace-public'>リポジトリ</a>" %}

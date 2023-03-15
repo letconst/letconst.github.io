@@ -1,4 +1,6 @@
-# ショットライン
+---
+title: ショットライン
+---
 
 {% capture links_raw -%}
     {% include emoji.html name="github" text="<a href='https://github.com/letconst/shotline'>リポジトリ</a>" %},

@@ -1,4 +1,6 @@
-# ビケイム・ア・ロケット
+---
+title: ビケイム・ア・ロケット
+---
 
 {% capture links_raw -%}
     {% include emoji.html name="github" text="<a href='https://github.com/letconst/became-a-rocket-public'>リポジトリ</a>" %},
