@@ -21,8 +21,23 @@ $table_head_bg_color: #eaecf0;
 
 .main-content {
     h2 {
-        border-bottom: 1px solid #c0c0c0;
+        position: relative;
         overflow: hidden;
+
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            height: 1px;
+            width: 0;
+            background-color: #c0c0c0;
+            transition: 2s cubic-bezier(0.65, 0.05, 0.36, 1) .5s;
+        }
+
+        &.js-animated::before {
+            width: 100%;
+        }
     }
 
     h1,
@@ -119,11 +134,13 @@ $table_head_bg_color: #eaecf0;
     .infobox {
         box-sizing: content-box;
         border: solid 1px $border_color;
+        border-radius: 5px;
         background-color: $table_bg_color;
         padding: 2px;
         font-size: 90%;
 
         .infobox-header {
+            border-radius: 3px 3px 0 0;
             background-color: $table_head_bg_color;
             padding: 5px;
             font-weight: bold;
@@ -146,6 +163,19 @@ $table_head_bg_color: #eaecf0;
                 tr {
                     &:nth-child(2n) {
                         background-color: #f0f1f2;
+                    }
+
+                    // 角丸対応
+                    &:last-child {
+                        border-radius: 0 0 3px 3px;
+
+                        th {
+                            border-radius: 0 0 0 3px;
+                        }
+
+                        td:last-child {
+                            border-radius: 0 0 3px 0;
+                        }
                     }
 
                     th {
