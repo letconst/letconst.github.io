@@ -70,6 +70,10 @@ AIの歌は、「音を紡いで世界を取り戻す」をキャッチコピー
 
 課題点は未だありますが、当時としては最大の壁となり得た、今も忘れぬ実装です。
 
+## プレイ動画
+
+{% include youtube.html url="https://www.youtube.com/embed/4fX7uEQ89sU" %}
+
 ## ギャラリー
 
 {% include gallary_header.html %}

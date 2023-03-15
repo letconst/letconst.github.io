@@ -70,6 +70,10 @@ title: 天上宮殿の騎士
 
 {% include clear.html %}
 
+## プレイ動画
+
+{% include youtube.html url="https://www.youtube.com/embed/p75NEJGB4dA" %}
+
 ## ギャラリー
 
 {% include gallary_header.html %}

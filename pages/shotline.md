@@ -78,7 +78,13 @@ Unityの`Start()`や`Update()`といったイベントメソッドは、記述�
 
 {% include clear.html %}
 
-## 受賞の瞬間
+## 動画
+
+### プレイ動画
+
+{% include youtube.html url="https://www.youtube.com/embed/-eFMnVe7t8E" %}
+
+### 受賞の瞬間
 
 {% include youtube.html url="https://www.youtube.com/embed/74gPiQ0GQ4E?start=4671" %}
 
