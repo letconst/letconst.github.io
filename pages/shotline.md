@@ -4,6 +4,7 @@ title: ショットライン
 
 {% capture links_raw -%}
     {% include emoji.html name="github" text="<a href='https://github.com/letconst/shotline'>リポジトリ</a>" %},
+    {% include emoji.html name="dl" text="<a href='https://github.com/letconst/shotline/releases/tag/v1.0.0'>ダウンロード</a>" %},
     <a href="https://game.creators-guild.com/gck2021/3435/">ゲームクリエイター甲子園2021 - 作品ページ</a>
 {% endcapture %}
 {% capture dev_env %}
@@ -84,6 +85,7 @@ Unityの`Start()`や`Update()`といったイベントメソッドは、記述�
 ## ギャラリー
 
 {% include gallary_header.html %}
+    {% include image.html image="games/shotline/shotline_gallary_manual.png" caption="操作説明書" %}
     {% include image.html image="games/shotline/shotline_gallary_award.jpg" caption="ゲームクリエイター甲子園2021にていただいた賞状" %}
 {% include gallary_footer.html %}
 
