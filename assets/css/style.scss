@@ -77,6 +77,17 @@ $table_head_bg_color: #eaecf0;
         }
     }
 
+    .scrollable-table {
+        overflow: auto;
+
+        @include small {
+            table {
+                width: 200%;
+            }
+        }
+
+    }
+
     .supper {
         font-size: 80%;
         vertical-align: super;
