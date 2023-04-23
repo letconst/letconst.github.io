@@ -47,6 +47,7 @@ title: Profile
         <ul>
             <li><a href="/pages/knight-of-heavenly-palace">天上宮殿の騎士</a></li>
             <li><a href="/pages/became-a-rocket">ビケイム・ア・ロケット</a></li>
+            <li><a href="/pages/kayama-eco-land">かやまエコランド</a></li>
         </ul>
     </dd>
 </dl>
