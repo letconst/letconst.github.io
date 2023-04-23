@@ -14,7 +14,7 @@ title: Profile
         <dd>
             東京デザインテクノロジーセンター専門学校<br>
             スーパーIT科 スーパーゲームクリエイター専攻<br>
-            <span class="supper right">2023年3月卒業見込み</span>
+            <span class="supper right">2023年3月卒業</span>
         </dd>
     </dl>
 </div>
